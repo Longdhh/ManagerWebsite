@@ -1,0 +1,49 @@
+
+  <div class="container-xl">
+    <h1 class="title">Cập nhật chính sách bảo mật</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Tên chính sách bảo mật</th>
+          <th scope="col">Chỉnh sửa gần nhất</th>
+          <th scope="col">Tác vụ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of securityList">
+          <td>{{item.name}}</td>
+          <td *ngIf="item.modified_at===null">{{item.created_at| date: 'dd/MM/yyyy'}}</td>
+          <td *ngIf="item.modified_at!==null">{{item.modified_at| date: 'dd/MM/yyyy'}}</td>
+          <td>
+            <button (click)="showEdit(item.security_id)" class="edit-link">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<div bsModal #modalEdit="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title pull-left title">Sửa chỉnh sách bảo mật</h4>
+      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalEdit.hide()">
+        <span aria-hidden="true" class="visually-hidden">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="editForm" class="form" (ngSubmit)="saveChanges(editForm.valid)">
+        <div class="block">
+            <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+        </div>
+        <button class="btn btn-success btn-save" type="submit">
+          <i class="fa-solid fa-plus"></i>Cập nhật
+        </button>
+        <button class="btn btn-danger btn-cancel" type="button" (click)="modalEdit.hide()">
+          <i class="fa-solid fa-xmark"></i>Quay lại
+        </button>
+      </form>
+    </div>
+</div>

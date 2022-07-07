@@ -1,0 +1,107 @@
+  <div class="container-xl">
+    <h1 class="title">Cập nhật danh sách phương thức làm việc</h1>
+    <form action="changeWorkingTypeInfoForm" [formGroup]="workingTypeForm" class="form">
+      <div class="block">
+        <label for="name" class="label">Tên phương thức làm việc</label>
+        <input formControlName="name" type="text" class="input">
+        <span class="error" *ngIf="workingTypeForm.get('name').touched && 
+                  workingTypeForm.get('name').hasError('required')">Xin hãy nhập tên phương thức làm việc</span>
+        <button class="btn btn-success btn-find" (click)="loadData()">Tìm kiếm</button>
+        <button (click)="showAdd()" class="btn btn-success btn-create">
+          <i class="fa-solid fa-plus"></i>
+          Tạo mới</button>
+      </div>
+    </form>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Tên phương thức làm việc</th>
+          <th scope="col">Trạng thái</th>
+          <th scope="col">Chỉnh sửa gần nhất</th>
+          <th scope="col">Tác vụ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of workingTypeList">
+          <td>{{item.name}}</td>
+          <td *ngIf="item.status===true">Active</td>
+          <td *ngIf="item.status===false">Inactive</td>
+          <td *ngIf="item.modified_at===null">{{item.created_at| date: 'dd/MM/yyyy'}}</td>
+          <td *ngIf="item.modified_at!==null">{{item.modified_at| date: 'dd/MM/yyyy'}}</td>
+          <td>
+            <button (click)="showEdit(item.working_type_id)" class="edit-link">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <a (click)="deleteItem(item.working_type_id)" class="delete-link">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <div class="col-md-12">
+        <pagination [boundaryLinks]="true" [itemsPerPage]="pageSize" (pageChanged)="pageChanged($event)" [totalItems]="totalRow"
+        [(ngModel)]="pageIndex" class="pagination-sm" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+      </div>
+    </div>
+  </div>
+
+  <div bsModal #modalAddEdit="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left title">Thêm/sửa cách thức làm việc</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalAddEdit.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="addEditForm" class="form" (ngSubmit)="saveChanges(addEditForm.valid)">
+          <div class="block">
+            <input type="hidden" formControlName="working_type_id" name="working_type_id">
+            <label for="name" class="label">
+              <p>Tên cách thức làm việc</p>
+            </label>
+            <input formControlName="name" type="text" class="input" (change)="createSeoTitle()" >
+            <span class="error" *ngIf="addEditForm.get('name').touched && 
+                      addEditForm.get('name').hasError('required')">Xin hãy nhập tên cách thức làm việc
+            </span>
+          </div>
+          <div class="block">
+            <label for="seo_alias" class="label">
+              <p>SEO Alias</p>
+            </label>
+            <input formControlName="seo_alias" type="text" class="input">
+            <span class="error" *ngIf="addEditForm.get('seo_alias').touched && 
+                      addEditForm.get('seo_alias').hasError('required')">Xin hãy nhập SEO Alias
+            </span>
+          </div>
+          <div class="block">
+            <label for="seo_title" class="label">
+              <p>SEO title</p>
+            </label>
+            <input formControlName="seo_title" type="text" class="input">
+          </div>
+          <div class="block">
+            <label for="seo_description" class="label">
+              <p>SEO description</p>
+            </label>
+            <input formControlName="seo_description" type="text" class="input">
+          </div>
+          <div class="block">
+            <label for="status" class="label">
+              <p>Trạng thái</p>
+            </label>
+            <input formControlName="status" type="checkbox">
+          </div>
+          <button class="btn btn-success btn-save" type="submit">
+            <i class="fa-solid fa-plus"></i>Cập nhật
+          </button>
+          <button class="btn btn-danger btn-cancel" type="button" (click)="modalAddEdit.hide()">
+            <i class="fa-solid fa-xmark"></i>Quay lại
+          </button>
+        </form>
+      </div>
+  </div>

@@ -1,0 +1,86 @@
+
+<div class="container-xl">
+    <h1 class="title">Cập nhật danh sách quyền hạn</h1>
+    <form action="changeRolesInfoForm" [formGroup]="rolesForm" class="form">
+      <div class="block">
+        <label for="Name" class="label">Tên quyền hạn</label>
+        <input formControlName="Name" type="text" class="input">
+        <span class="error" *ngIf="rolesForm.get('Name').touched && 
+                  rolesForm.get('Name').hasError('required')">Xin hãy nhập tên quyền hạn</span>
+        <button class="btn btn-success btn-find" (click)="loadData()">Tìm kiếm</button>
+        <button (click)="showAdd()" class="btn btn-success btn-create">
+          <i class="fa-solid fa-plus"></i>
+          Tạo mới</button>
+      </div>
+    </form>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Mã quyền</th>
+          <th scope="col">Tên quyền</th>
+          <th scope="col">Tác vụ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of roleList">
+          <th scope="row">{{item.Name}}</th>
+          <td>{{item.Description}}</td>
+          <td>
+            <button (click)="showEdit(item.Id)" class="edit-link">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <a (click)="deleteItem(item.Id)" class="delete-link">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <div class="col-md-12">
+        <pagination [boundaryLinks]="true" [itemsPerPage]="pageSize" (pageChanged)="pageChanged($event)" [totalItems]="totalRow"
+        [(ngModel)]="pageIndex" class="pagination-sm" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+      </div>
+    </div>
+  </div>
+  <div bsModal #modalAddEdit="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left title">Thêm/sửa quyền</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalAddEdit.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="addEditForm" class="form" (ngSubmit)="saveChanges(addEditForm.valid)">
+          <div class="block">
+            <input type="hidden" formControlName="Id" name="Id">
+            <label for="Name" class="label">
+              <p>Mã quyền</p>
+            </label>
+            <input formControlName="Name" type="text" class="input" >
+            <span class="error" *ngIf="addEditForm.get('Name').touched && 
+                      addEditForm.get('Name').hasError('required')">Xin hãy nhập mã
+            </span>
+          </div>
+          <div class="block">
+            <input type="hidden" formControlName="Id" name="Id">
+            <label for="Description" class="label">
+              <p>Tên quyền</p>
+            </label>
+            <input formControlName="Description" type="text" class="input" >
+            <span class="error" *ngIf="addEditForm.get('Description').touched && 
+                      addEditForm.get('Description').hasError('required')">Xin hãy nhập tên quyền
+            </span>
+          </div>
+          <button class="btn btn-success btn-save" type="submit">
+            <i class="fa-solid fa-plus"></i>Cập nhật
+          </button>
+          <button class="btn btn-danger btn-cancel" type="button" (click)="modalAddEdit.hide()">
+            <i class="fa-solid fa-xmark"></i>Quay lại
+          </button>
+        </form>
+      </div>
+  </div>

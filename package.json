@@ -18,6 +18,13 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@ckeditor/ckeditor5-angular": "^4.0.0",
+    "@ng-select/ng-select": "^8.1.1",
+    "alertifyjs": "^1.10.0",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.3",
+    "ngx-bootstrap": "^8.0.0",
+    "ngx-treeview": "^10.0.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

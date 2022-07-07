@@ -1,0 +1,189 @@
+.sidebar {
+    top: 0;
+    left: 0;
+    display: block;
+    position: fixed;
+    width: 60px;
+    height: 100vh;
+    background-color: var(--bs-white);
+    overflow-x: hidden;
+    transition: all .5s ease; 
+    white-space: nowrap;
+    border-right: 1px solid var(--bs-gray-500);
+    z-index: 2;
+}
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+.sidebar > div {
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.header {
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    transition: all .2s ease;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bs-gray-600);
+}
+
+.logo {
+    width: 58px;
+}
+
+.brand-title {
+    color: var(--bs-dark);
+    visibility: hidden;
+    width: auto;
+    align-items: center;
+    transition: all 0.2s ease;
+    width: 0;
+    display: flex;
+}
+
+.brand-title > h5 {
+    margin-left: 8px;
+}
+
+.sidebar.active .brand-title {   
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+
+.icon-holder {
+    display: inline-block;
+    width: 20px;
+}
+
+.icon {
+    font-size:24px;
+    position:relative;
+    top:8%;
+    left: 14px;
+    transform:translateX(-50%);
+    color: var(--bs-dark);
+}
+
+.home-icon {
+    color: var(--bs-success);
+}
+
+.map-icon {
+    color: var(--bs-purple);
+}
+
+.company-icon {
+    color: var(--bs-primary);
+}
+
+.job-icon {
+    color: var(--bs-pink);
+}
+
+.logout-icon {
+    color: var(--bs-red);
+}
+
+.item {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.item > a {
+    text-decoration: none;
+}
+
+
+.title {
+    margin-left: 30px;
+    transition: all 0.5s ease;
+    color: var(--bs-gray-600);
+}
+
+.item:hover,
+.choosing {
+    cursor: pointer;
+    background-color: var(--bs-gray-100);
+}
+
+.item:hover h5 {
+    opacity: .8;
+}
+
+.link {
+    display: flex;
+    text-decoration: none;
+}
+
+.sidebar.active {
+    width: 350px;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 60px;
+    transition: transform .5s;
+}
+
+.sidebar.active .toggle-button {
+    transform: rotate(180deg);
+}
+
+#sub-item__list {
+    list-style: none;
+    padding: 0;
+}
+
+.toggle-icon {
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.sidebar.active .toggle-icon {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub-item {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 4rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    position: relative;
+    color: var(--bs-dark);
+}
+
+
+.sub-item:hover,
+.choosing {
+    cursor: pointer;
+    background-color: var(--bs-gray-100);
+}
+
+.sub-item:hover a {
+    opacity: .8;
+}

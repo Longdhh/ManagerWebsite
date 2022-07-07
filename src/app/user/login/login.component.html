@@ -1,0 +1,38 @@
+<div class="login-page" role="login-page">
+    <div class="container-fluid">
+        <div class="row g-0">
+            <div class="col-xxl-3 col-12 col-md-5 col-lg-4 col col-sm-7">
+                <div class="login__column">
+                    <div class="login-form" role="login-form">
+                        <h1 class="login__title">Đăng nhập</h1>
+                        <p class="login__description">Hệ thống quản lý thông tin trực tuyến</p>
+                        <form class="loginForm" [formGroup]="loginForm" (ngSubmit)="login()">
+                            <div class="block">
+                                <label for="user" class="title">Tên tài khoản: </label>
+                                <i class="fa-solid fa-user icon"></i>
+                                <input formControlName="username" type="text" class="input" placeholder="Nhập tên tài khoản"/>
+                                <span class="error" *ngIf="loginForm.get('username')?.touched && 
+                                    loginForm.get('username')?.hasError('required')">Xin hãy nhập tên tài khoản</span>
+                            </div>
+                            <div class="block">
+                                <label for="password" class="title">Mật khẩu: </label>
+                                <i class="fa-solid fa-key icon"></i>
+                                <input formControlName="password" type="password" class="input" placeholder="Nhập mật khẩu"/>
+                                <span class="error" *ngIf="loginForm.get('password')?.touched && 
+                                    loginForm.get('password')?.hasError('required')">Xin hãy nhập mật khẩu</span>
+                            </div>
+                            <button type="submit" name="submit" class="btn login__btn btn-success">Đăng nhập</button>
+                            <a routerLink="/forgot-password" class="link">Quên mật khẩu ?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-9 col-md-7 col-lg-8 col-sm-5 col">
+                <div class="login__banner">
+                    <div class="login__img" style="background-image: url('../../assets/img/login/wall-paper.jpg')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

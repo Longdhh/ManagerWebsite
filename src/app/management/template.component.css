@@ -1,0 +1,9 @@
+.page {
+    background-color: var(--bs-gray-200);
+    padding:70px 8px;;
+    transition: all .5s ease;
+    display: block;
+    position: absolute;
+    min-height: 100vh;
+}
+

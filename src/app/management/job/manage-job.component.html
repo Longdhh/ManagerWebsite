@@ -1,0 +1,155 @@
+<div class="container-xl">
+  <h1 class="title">Quản lý danh sách công việc</h1>
+  <form action="changeJobInfoForm" [formGroup]="jobForm" class="form">
+    <div class="block">
+      <label for="name" class="label">Tên công việc</label>
+      <input formControlName="name" type="text" class="input">
+      <span class="error" *ngIf="jobForm.get('name').touched && 
+                  jobForm.get('name').hasError('required')">Xin hãy nhập tên công việc</span>
+      <button class="btn btn-success btn-find">Tìm kiếm</button>
+    </div>
+  </form>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Tên công việc</th>
+        <th scope="col">Trạng thái</th>
+        <th scope="col">Chỉnh sửa gần nhất</th>
+        <th scope="col">Tác vụ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of jobList">
+        <td>{{item.name}}</td>
+        <td *ngIf="item.status==='Active'">Kích hoạt</td>
+        <td *ngIf="item.status==='Pending'">Đang chờ duyệt</td>
+        <td *ngIf="item.modified_at===null">{{item.created_at| date: 'dd/MM/yyyy'}}</td>
+        <td *ngIf="item.modified_at!==null">{{item.modified_at| date: 'dd/MM/yyyy'}}</td>
+        <td>
+          <button (click)="showEdit(item.job_id)" class="edit-link">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <div class="col-md-12">
+      <pagination [boundaryLinks]="true" [itemsPerPage]="pageSize" (pageChanged)="pageChanged($event)"
+        [totalItems]="totalRow" [(ngModel)]="pageIndex" class="pagination-sm" previousText="&lsaquo;"
+        nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+    </div>
+  </div>
+</div>
+<div bsModal #modalAddEdit="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left title">Sửa công việc</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalAddEdit.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="addEditForm" class="form" (ngSubmit)="saveChanges()">
+          <div class="block">
+            <input type="hidden" formControlName="job_id" name="job_id">
+            <label for="name" class="label">
+              Tên công việc
+            </label>
+            <input formControlName="name" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label class="label">
+              Thuộc công ty
+            </label>
+            <input formControlName="company" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label class="label">Phân loại công việc</label>
+            <ng-select formControlName="job_categories" [multiple]="true" [readonly] [closeOnSelect]="false"
+              placeholder="--- Chọn phân loại ---" style="width: 250px">
+              <ng-option *ngFor="let category of categoryList" [value]="category">{{category.name}}</ng-option>
+            </ng-select>
+          </div>
+          <div class="block">
+            <label for="description" class="label">
+              Mô tả công việc
+            </label>
+            <textarea formControlName="description" type="text" class="input area-input" readonly></textarea>
+          </div>
+          <div class="block">
+            <label for="job_requirement" class="label">
+              Yêu cầu công việc
+            </label>
+            <textarea formControlName="job_requirement" type="text" class="input area-input" readonly></textarea>
+          </div>
+          <div class="block">
+            <label for="salary_range" class="label">
+              Mức lương
+            </label>
+            <input formControlName="salary_range" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label for="working_type" class="label">
+              Cách thức làm việc
+            </label>
+            <input formControlName="working_type" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label for="level" class="label">
+              Trình độ làm việc
+            </label>
+            <input formControlName="level" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label class="label">Phúc lợi</label>
+            <div formArrayName="welfares">
+              <div *ngFor="let control of addEditForm.get('welfares')['controls']; index as i" class="sub-block">
+                <div [formGroupName]="i">
+                  <input formControlName="welfare_type" type="text" class="welfare_type" readonly>
+                  <input formControlName="description" type="text" class="input welfare" readonly>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <label for="address" class="label">
+              Địa chỉ
+            </label>
+            <input formControlName="province" type="text" class="welfare_type" readonly>
+            <input formControlName="address" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label for="status" class="label">
+              Ngày tạo
+            </label>
+            <input formControlName="created_at" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label for="status" class="label">
+              Ngày hết hạn
+            </label>
+            <input formControlName="job_end_date" type="text" class="input" readonly>
+          </div>
+          <div class="block">
+            <label for="status" class="label">
+              Trạng thái
+            </label>
+            <input formControlName="status" type="checkbox">
+          </div>
+          <button class="btn btn-success btn-save" type="submit" *ngIf="status==='Pending'">
+            <i class="fa-solid fa-plus"></i>Kích hoạt việc làm
+          </button>
+          <button class="btn btn-warning btn-save" type="submit" *ngIf="status==='Active'">
+            <i class="fa-solid fa-plus" ></i>Huỷ kích hoạt việc làm
+          </button>
+          <button class="btn btn-danger btn-cancel" type="button" (click)="modalAddEdit.hide()">
+            <i class="fa-solid fa-xmark"></i>Quay lại
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

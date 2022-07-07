@@ -1,0 +1,88 @@
+
+.must {
+    display: inline-block;
+    color: var(--bs-red);
+}
+
+.title {
+    color: var(--bs-success);
+}
+
+.block {
+    margin-left: 0;
+    display: flex;
+    position: relative;
+    padding-bottom: 40px;
+    align-items: center;
+
+}
+
+.label {
+    width: 188px;
+    text-align: right;
+    padding-right:10px;
+}
+
+.input {
+    width: 250px;
+    border-radius: 4px;
+    outline: none;
+    min-height: 36px;
+    border: 1px solid #ccc;
+    padding: 5px 0 5px 10px;
+}
+
+.error {
+    color: var(--bs-red);
+    left: 188px;
+    position: absolute;
+    bottom: 16px;
+}
+
+.form {
+    margin-top: 20px;
+    padding: 0 100px;
+}
+.edit-link {
+    text-decoration: none;
+    color: var(--bs-primary);
+    margin-right: 12px;
+    background-color: transparent;
+    border: none;
+}
+
+.delete-link {
+    color: var(--bs-danger);
+    cursor: pointer;
+}
+
+.btn-create,
+.btn-find {
+    margin-left: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+
+.btn-save {
+    margin-left: 170px;
+    margin-right: 30px;
+}
+
+.btn > i {
+    margin-right: 8px;
+}
+.pagination {
+    position: absolute;
+
+    right:70px;
+}
+
+.home-slide {
+    width: 50px;
+}
+td {
+    border: 1px solid var(--bs-gray-200)
+}
