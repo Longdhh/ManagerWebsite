@@ -1,0 +1,1619 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4134689820688409360" datatype="html">
+        <source>Cập nhật danh sách home slide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7157837947967028626" datatype="html">
+        <source>Tên home slide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1243149395173191606" datatype="html">
+        <source>Xin hãy nhập tên home slide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3772067141391863905" datatype="html">
+        <source>Tìm kiếm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8480480832417176179" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Tạo mới</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5386341285423740248" datatype="html">
+        <source>Tên</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1943302006031419982" datatype="html">
+        <source>Ảnh</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2981219928115418649" datatype="html">
+        <source>Đường dẫn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4774035139951832451" datatype="html">
+        <source>Trạng thái</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9072855912036351049" datatype="html">
+        <source>Chỉnh sửa gần nhất</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8254640039396903770" datatype="html">
+        <source>Tác vụ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5192749403180081669" datatype="html">
+        <source>Đang hiện trên trang chủ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3167282349038655618" datatype="html">
+        <source>Chờ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7258139924912748097" datatype="html">
+        <source>Thêm/sửa phân loại công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5148858364028130462" datatype="html">
+        <source>Tên slide trang chủ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="521003648221224215" datatype="html">
+        <source>Xin hãy nhập tên slide trang chủ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5888469957649910035" datatype="html">
+        <source>Xin hãy nhập đường dẫn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7173222842943511960" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Cập nhật</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/security/security.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/tos/tos.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6255869025078311796" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-xmark&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Quay lại</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/banner/banner.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2815692875355653243" datatype="html">
+        <source>Cập nhật danh sách danh mục blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8584492785511488493" datatype="html">
+        <source>Tên danh mục blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4029586371406368739" datatype="html">
+        <source>Xin hãy nhập tên danh mục blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1272586868241832249" datatype="html">
+        <source>Chạy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1307286133463640746" datatype="html">
+        <source>Không chạy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2573624299275463708" datatype="html">
+        <source>Thêm/sửa danh mục blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1370677731636069653" datatype="html">
+        <source>Xin hãy nhập SEO Alias</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1055136494864285509" datatype="html">
+        <source>Tiêu đề SEO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8030604227610097710" datatype="html">
+        <source>Mô tả SEO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog-category/blog-category.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8160942304738411410" datatype="html">
+        <source>Cập nhật danh sách blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="206307372022011735" datatype="html">
+        <source>Tên blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7105691291993876062" datatype="html">
+        <source>Xin hãy nhập tên blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="795562177411916623" datatype="html">
+        <source>Chờ đăng tải</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="271690713273506760" datatype="html">
+        <source>Đã đăng tải</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6155933361609830652" datatype="html">
+        <source>Thêm/sửa blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1121237376070889640" datatype="html">
+        <source>Thể loại</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4264282837005243767" datatype="html">
+        <source>Ảnh bài viết</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2668328937665380931" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Tạo bài viết</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4571328908302463233" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-angles-down&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Huỷ đăng tải bài viết</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7676386927072913536" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-paper-plane&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Đăng tải</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6620811764212101486" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-eye&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Xem trước</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/blog/blog.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2389836706936089947" datatype="html">
+        <source>Cập nhật danh sách danh mục công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4733738501678317062" datatype="html">
+        <source>Tên danh mục công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3724234781720932386" datatype="html">
+        <source>Xin hãy nhập tên danh mục công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/category/category.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="756744328037175704" datatype="html">
+        <source>Quản lý danh sách công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7667374202114107543" datatype="html">
+        <source>Tên công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7593332400671875856" datatype="html">
+        <source>Xin hãy nhập tên công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1706463029512214570" datatype="html">
+        <source>Kích hoạt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3264740547243676125" datatype="html">
+        <source>Đang chờ duyệt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7762892332053252137" datatype="html">
+        <source>Sửa công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2072268245606079750" datatype="html">
+        <source>Thuộc công ty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="562224847387406449" datatype="html">
+        <source>Phân loại công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6215038461110659298" datatype="html">
+        <source>Mô tả công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1267653654816469555" datatype="html">
+        <source>Yêu cầu công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2232897003939519911" datatype="html">
+        <source>Mức lương</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9039547038966857390" datatype="html">
+        <source>Cách thức làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5320849471617218891" datatype="html">
+        <source>Trình độ làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8177532607578602375" datatype="html">
+        <source>Phúc lợi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1076168920176183541" datatype="html">
+        <source>Địa chỉ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8921146952270334670" datatype="html">
+        <source>Ngày tạo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3080950484156986237" datatype="html">
+        <source>Ngày hết hạn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8813107328893520002" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Kích hoạt việc làm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5049168151992657864" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-plus&quot; &gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>Huỷ kích hoạt việc làm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/job/job.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1307241419483710671" datatype="html">
+        <source>Cập nhật danh sách trình độ làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4443358762063622955" datatype="html">
+        <source>Tên trình độ làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8619731234461248269" datatype="html">
+        <source>Xin hãy nhập tên trình độ làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5512948371291798557" datatype="html">
+        <source>Thêm/sửa trình độ công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1502090351674287798" datatype="html">
+        <source>Tên trình độ công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8409510611142122698" datatype="html">
+        <source>Xin hãy nhập tên trình độ công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5586723776811780613" datatype="html">
+        <source>SEO Alias</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/level/level.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="928971996672584100" datatype="html">
+        <source>Cập nhật danh sách tỉnh/thành phố</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4187504180845356034" datatype="html">
+        <source>Tên tỉnh/thành phố</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2213554021284546729" datatype="html">
+        <source>Xin hãy nhập tên tỉnh/thành phố</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8946317300976349064" datatype="html">
+        <source>Thêm/sửa tỉnh/thành phố</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/province/province.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7433636323127358777" datatype="html">
+        <source>Cập nhật danh sách quyền hạn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2932056810596591724" datatype="html">
+        <source>Tên quyền hạn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6235957257907739675" datatype="html">
+        <source>Xin hãy nhập tên quyền hạn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3700742508419701796" datatype="html">
+        <source>Mã quyền</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5597808754613088895" datatype="html">
+        <source>Tên quyền</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1963544574361120298" datatype="html">
+        <source>Thêm/sửa quyền</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8700220719572592262" datatype="html">
+        <source>Xin hãy nhập mã</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1463371601314843400" datatype="html">
+        <source>Xin hãy nhập tên quyền</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/roles/roles.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5505461281079937513" datatype="html">
+        <source>Cập nhật danh sách mức lương</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7509341897298854497" datatype="html">
+        <source>Tên mức lương</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6609807417175550719" datatype="html">
+        <source>Xin hãy nhập tên mức lương</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6270438825859593453" datatype="html">
+        <source>Thêm/sửa mức lương</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/salary/salary.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4021534530699325561" datatype="html">
+        <source>Cập nhật chính sách bảo mật</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/security/security.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5563638181219748046" datatype="html">
+        <source>Cập nhật điều khoản dịch vụ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/tos/tos.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2442715880734337334" datatype="html">
+        <source>Cập nhật danh sách người dùng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5359751021747987566" datatype="html">
+        <source>Tên người dùng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6974976819927808410" datatype="html">
+        <source>Xin hãy nhập tên người dùng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="177386881104944907" datatype="html">
+        <source>Tên tài khoản</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84626264484862437" datatype="html">
+        <source>Địa chỉ email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8167279493350759414" datatype="html">
+        <source>Số điện thoại</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2149055350688110408" datatype="html">
+        <source>Ảnh đại diện</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2070520626104801329" datatype="html">
+        <source>Bình thường</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1345918505770751166" datatype="html">
+        <source>Bị khoá</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7422825268838434889" datatype="html">
+        <source>Thêm/sửa người dùng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2561925118727240904" datatype="html">
+        <source>Tên người dùng:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5506753754909479775" datatype="html">
+        <source>Tên tài khoản:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1175377322339217596" datatype="html">
+        <source>Xin hãy nhập tên tài khoản</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4750202911090008777" datatype="html">
+        <source>Địa chỉ Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80257269714490910" datatype="html">
+        <source>Xin hãy nhập địa chỉ Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6522061296423866777" datatype="html">
+        <source>Địa chỉ email không chính xác</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9133684363119179241" datatype="html">
+        <source>Mật khẩu:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2775475306671835839" datatype="html">
+        <source>Xin hãy nhập mật khẩu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2594154965684942020" datatype="html">
+        <source>Mật khẩu có độ dài không phù hợp</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2864246513191656654" datatype="html">
+        <source>Mật khẩu từ 6-32 ký tự, có ít nhất 1 kí tự chữ, 1 kí tự số</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2523469043312153455" datatype="html">
+        <source>Nhập lại mật khẩu:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3573920790441341314" datatype="html">
+        <source>Xin hãy nhập lại mật khẩu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7820561665385875550" datatype="html">
+        <source>Quyền</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/user/user.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1084804935722588296" datatype="html">
+        <source>Cập nhật danh sách loại phúc lợi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2233445586378852907" datatype="html">
+        <source>Tên loại phúc lợi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5800889912996536260" datatype="html">
+        <source>Xin hãy nhập tên loại phúc lợi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4007786413539277166" datatype="html">
+        <source>Thêm/sửa loại phúc lợi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/welfare-type/welfare-type.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8736686436859828220" datatype="html">
+        <source>Cập nhật danh sách phương thức làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4450067849676577959" datatype="html">
+        <source>Tên phương thức làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2457839721175476960" datatype="html">
+        <source>Xin hãy nhập tên phương thức làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5588721717770875298" datatype="html">
+        <source>Thêm/sửa cách thức làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2624243804544760923" datatype="html">
+        <source>Tên cách thức làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7109586413557628092" datatype="html">
+        <source>Xin hãy nhập tên cách thức làm việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/management/working-type/working-type.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3193869701080664877" datatype="html">
+        <source>Quản lý thông tin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8136827968857955958" datatype="html">
+        <source>Quản lý người dùng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8412356937957402055" datatype="html">
+        <source>Nhóm quyền</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9014788006296607066" datatype="html">
+        <source>Người dùng</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3024776666646612361" datatype="html">
+        <source>Quản lý các công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2902196351089415902" datatype="html">
+        <source>Quản lý thông tin website</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7696008840270676292" datatype="html">
+        <source>Tỉnh/thành phố</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6603371212308860754" datatype="html">
+        <source>Danh mục công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6311600776253815689" datatype="html">
+        <source>Trình độ công việc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7740292530662337296" datatype="html">
+        <source>Home Slide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4018758619983352730" datatype="html">
+        <source>Loại phúc lợi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8627732568191316329" datatype="html">
+        <source>Phân loại blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6036190271264983823" datatype="html">
+        <source>Quản lý văn bản</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2478623915646346651" datatype="html">
+        <source>Điều khoản dịch vụ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4385795868175445516" datatype="html">
+        <source>Chính sách bảo mật</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6926118072081165227" datatype="html">
+        <source>Đăng xuất</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="649976638947891449" datatype="html">
+        <source>Quên mật khẩu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8521536111812418340" datatype="html">
+        <source>Xin hãy nhập địa chỉ email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8914008070469583442" datatype="html">
+        <source>Địa chỉ email không hợp lệ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8004281690545937182" datatype="html">
+        <source>Đổi mật khẩu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5761137150582302407" datatype="html">
+        <source>Quay lại đăng nhập</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1425991189649446302" datatype="html">
+        <source>Đăng nhập</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3791715087161632884" datatype="html">
+        <source>Hệ thống quản lý thông tin trực tuyến</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1298110093229086411" datatype="html">
+        <source>Quên mật khẩu ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

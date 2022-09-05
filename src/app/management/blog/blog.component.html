@@ -1,0 +1,112 @@
+<div class="container-xl">
+  <h1 class="title" i18n>Cập nhật danh sách blog</h1>
+  <form [formGroup]="blogForm" class="form">
+    <div class="block">
+      <label for="name" class="label" i18n>Tên blog</label>
+      <input formControlName="name" type="text" class="input">
+      <span class="error" *ngIf="blogForm.get('name').touched && 
+                  blogForm.get('name').hasError('required')" i18n>Xin hãy nhập tên blog</span>
+      <button class="btn btn-success btn-find" (click)="loadData()" i18n>Tìm kiếm</button>
+      <button class="btn btn-success btn-create" (click)="showAdd()" i18n>
+        <i class="fa-solid fa-plus"></i>Tạo mới</button>
+    </div>
+  </form>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col" i18n>Tên blog</th>
+        <th scope="col" i18n>Trạng thái</th>
+        <th scope="col" i18n>Chỉnh sửa gần nhất</th>
+        <th scope="col" i18n>Tác vụ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of blogList">
+        <td>{{item.name}}</td>
+        <td *ngIf="item.status===false" i18n>Chờ đăng tải</td>
+        <td *ngIf="item.status===true" i18n>Đã đăng tải</td>
+        <td *ngIf="item.modified_at===null">{{item.created_at| date: 'dd/MM/yyyy'}}</td>
+        <td *ngIf="item.modified_at!==null">{{item.modified_at| date: 'dd/MM/yyyy'}}</td>
+        <td>
+          <button (click)="changeStatus(item.blog_id)" class="unpublish-link" *ngIf="item.status===true">
+            <i class="fa-solid fa-angles-down"></i>
+          </button>
+          <button (click)="changeStatus(item.blog_id)" class="publish-link" *ngIf="item.status===false">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <button (click)="showEdit(item.blog_id)" class="edit-link">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+          <a href={{blogLink+item.blog_id}} class="view-link" target="_blank">
+            <i class="fa-solid fa-eye"></i>
+          </a>
+          <button (click)="deleteItem(item.blog_id)" class="delete-link">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <div class="col-md-12">
+      <pagination [boundaryLinks]="true" [itemsPerPage]="pageSize" (pageChanged)="pageChanged($event)"
+        [totalItems]="totalRow" [(ngModel)]="pageIndex" class="pagination-sm" previousText="&lsaquo;"
+        nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+    </div>
+  </div>
+</div>
+
+<div bsModal #modalAddEdit="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left title" i18n>Thêm/sửa blog</h4>
+        <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalAddEdit.hide()">
+          <span aria-hidden="true" class="visually-hidden">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="addEditForm" class="form" (ngSubmit)="saveData(addEditForm.valid)">
+          <input type="hidden" formControlName="blog_id" name="blog_id">
+          <div class="block">
+            <label for="name" class="label" i18n>Tên blog</label>
+            <input formControlName="name" type="text" class="input" (change)="createSeoTitle()">
+            <span class="error" *ngIf="addEditForm.get('name').touched && 
+                addEditForm.get('name').hasError('required')" i18n>Xin hãy nhập tên blog</span>
+          </div>
+          <div class="block">
+            <label for="name" class="label" i18n>Thể loại</label>
+            <ng-select formControlName="blog_category_id" [closeOnSelect]="true" placeholder="--- Chọn thể loại ---">
+              <ng-option *ngFor="let blogCategory of blogCategoryList" [value]="blogCategory.blog_category_id">
+                {{blogCategory.name}}</ng-option>
+            </ng-select>
+          </div>
+          <div class="block">
+            <label for="home_slide_image" class="label" i18n>Ảnh bài viết</label>
+            <input type="file" class="input" #avatar name="avatar">
+            <input type="hidden" formControlName="avatar">
+          </div>
+          <input formControlName="seo_alias" type="hidden" class="input">
+          <input formControlName="seo_title" type="hidden" class="input">
+          <div style="margin-bottom: 20px;">
+            <ckeditor [config]="config" class="editor" [editor]="Editor" formControlName="description" (ready)="onReady($event)" data="description">
+            </ckeditor>
+          </div>
+          <input formControlName="status" type="hidden">
+          <button *ngIf="addEditForm.value.status===null" type="submit" class="btn btn-success btn-air" i18n>
+            <i class="fa-solid fa-plus"></i>Tạo bài viết</button>
+          <button *ngIf="addEditForm.value.status===true" type="button" class="btn btn-unpublish" (click)="changeStatus(addEditForm.value.blog_id)" i18n>
+            <i class="fa-solid fa-angles-down"></i>Huỷ đăng tải bài viết</button>
+          <button *ngIf="addEditForm.value.status===false" class="btn btn-success btn-air" type="button" (click)="changeStatus(addEditForm.value.blog_id)" i18n>
+            <i class="fa-solid fa-paper-plane"></i>Đăng tải</button>
+          <a *ngIf="addEditForm.value.status===false || addEditForm.value.status===true" class="btn btn-info btn-pre" href="{{blogLink + addEditForm.value.blog_id}}" target="_blank" i18n>
+            <i class="fa-solid fa-eye"></i>Xem trước</a>
+          <button class="btn btn-save" type="submit" *ngIf="addEditForm.value.blog_id!==null" i18n>
+            <i class="fa-solid fa-plus"></i>Cập nhật</button>
+          <button class="btn btn-danger btn-cancel" type="button" (click)="modalAddEdit.hide()" i18n>
+            <i class="fa-solid fa-xmark"></i>Quay lại</button>
+        </form>
+      </div>
+    </div>
+  </div>

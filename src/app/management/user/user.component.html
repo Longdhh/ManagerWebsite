@@ -1,27 +1,26 @@
 <div class="container-xl">
-  <h1 class="title">Cập nhật danh sách người dùng</h1>
+  <h1 class="title" i18n>Cập nhật danh sách người dùng</h1>
   <form action="changeUserInfoForm" [formGroup]="userForm" class="form">
     <div class="block">
-      <label for="name" class="label">Tên người dùng</label>
+      <label for="name" class="label" i18n>Tên người dùng</label>
       <input formControlName="name" type="text" class="input">
       <span class="error" *ngIf="userForm.get('name').touched && 
-                  userForm.get('name').hasError('required')">Xin hãy nhập tên người dùng</span>
-      <button class="btn btn-success btn-find" (click)="loadData()">Tìm kiếm</button>
-      <button (click)="showAdd()" class="btn btn-success btn-create">
-        <i class="fa-solid fa-plus"></i>
-        Tạo mới</button>
+                  userForm.get('name').hasError('required')" i18n>Xin hãy nhập tên người dùng</span>
+      <button class="btn btn-success btn-find" (click)="loadData()" i18n>Tìm kiếm</button>
+      <button (click)="showAdd()" class="btn btn-success btn-create" i18n>
+        <i class="fa-solid fa-plus"></i>Tạo mới</button>
     </div>
   </form>
   <table class="table table-striped">
     <thead>
       <tr>
-        <th scope="col">Tên tài khoản</th>
-        <th scope="col">Tên người dùng</th>
-        <th scope="col">Email</th>
-        <th scope="col">Số điện thoại</th>
-        <th scope="col">Avatar</th>
-        <th scope="col">Trạng thái</th>
-        <th scope="col">Tác vụ</th>
+        <th scope="col" i18n>Tên tài khoản</th>
+        <th scope="col" i18n>Tên người dùng</th>
+        <th scope="col" i18n>Địa chỉ email</th>
+        <th scope="col" i18n>Số điện thoại</th>
+        <th scope="col" i18n>Ảnh đại diện</th>
+        <th scope="col" i18n>Trạng thái</th>
+        <th scope="col" i18n>Tác vụ</th>
       </tr>
     </thead>
     <tbody>
@@ -31,8 +30,8 @@
         <td>{{item.Email}}</td>
         <td>{{item.PhoneNumber}}</td>
         <td><img class="avatar" src="{{imgRoot + item.avatar}}"></td>
-        <td *ngIf="item.status===true">Active</td>
-        <td *ngIf="item.status===false">Inactive</td>
+        <td *ngIf="item.status===true" i18n>Bình thường</td>
+        <td *ngIf="item.status===false" i18n>Bị khoá</td>
         <td>
           <button (click)="showEdit(item.Id)" class="edit-link">
             <i class="fa-solid fa-pen-to-square"></i>
@@ -58,7 +57,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title pull-left title">Thêm/sửa người dùng</h4>
+        <h4 class="modal-title pull-left title" i18n>Thêm/sửa người dùng</h4>
         <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalAddEdit.hide()">
           <span aria-hidden="true" class="visually-hidden">&times;</span>
         </button>
@@ -67,74 +66,60 @@
         <form [formGroup]="addEditForm" class="form" (ngSubmit)="saveData()">
           <div class="block">
             <input type="hidden" formControlName="Id" name="Id">
-            <label for="name" class="label">
-              Tên người dùng
-            </label>
+            <label for="name" class="label" i18n>Tên người dùng:</label>
             <input formControlName="name" type="text" class="input">
             <span class="error" *ngIf="addEditForm.get('name').touched && 
-                      addEditForm.get('name').hasError('required')">Xin hãy nhập tên người dùng
-            </span>
+                      addEditForm.get('name').hasError('required')" i18n>Xin hãy nhập tên người dùng</span>
           </div>
           <div class="block">
-            <label for="UserName" class="label">
-              Tên tài khoản
-            </label>
+            <label for="UserName" class="label" i18n>Tên tài khoản:</label>
             <input formControlName="UserName" type="text" class="input">
             <span class="error" *ngIf="addEditForm.get('UserName').touched && 
-                      addEditForm.get('UserName').hasError('required')">Xin hãy nhập tên tài khoản
-            </span>
+                      addEditForm.get('UserName').hasError('required')" i18n>Xin hãy nhập tên tài khoản</span>
           </div>
           <div class="block">
-            <label for="user" class="label">Địa chỉ Email: </label>
+            <label for="user" class="label" i18n>Địa chỉ Email:</label>
             <input formControlName="Email" class="input" placeholder="Nhập Email" />
             <span class="error" *ngIf="addEditForm.get('Email').touched && 
-                addEditForm.get('Email').hasError('required')">Xin hãy nhập địa chỉ Email</span>
-            <span class="error" *ngIf="addEditForm.get('Email').hasError('Email')">Địa chỉ email không chính xác</span>
+                addEditForm.get('Email').hasError('required')" i18n>Xin hãy nhập địa chỉ Email</span>
+            <span class="error" *ngIf="addEditForm.get('Email').hasError('Email')" i18n>Địa chỉ email không chính xác</span>
           </div>
           <div class="block" *ngIf="!addEditForm.get('Id').value">
-            <label for="Password" class="label">Mật khẩu: </label>
+            <label for="Password" class="label" i18n>Mật khẩu:</label>
             <input formControlName="Password" type="Password" class="input" placeholder="Nhập mật khẩu" />
 
             <span class="error password-error" *ngIf="addEditForm.get('Password').touched &&
-                 addEditForm.get('Password').hasError('required')">Xin hãy nhập mật khẩu</span>
+                 addEditForm.get('Password').hasError('required')" i18n>Xin hãy nhập mật khẩu</span>
             <span class="error password-error" *ngIf="addEditForm.get('Password').hasError('minlength') ||
-                 addEditForm.get('Password').hasError('maxlength')">Mật khẩu có độ dài không phù hợp</span>
+                 addEditForm.get('Password').hasError('maxlength')" i18n>Mật khẩu có độ dài không phù hợp</span>
           </div>
-          <p *ngIf="!addEditForm.get('Id').value" class="instruction">Mật khẩu từ 6-32 ký tự, có ít nhất 1 kí tự chữ, 1 kí tự số</p>
+          <p *ngIf="!addEditForm.get('Id').value" class="instruction" i18n>Mật khẩu từ 6-32 ký tự, có ít nhất 1 kí tự chữ, 1 kí tự số</p>
           <div class="block" *ngIf="!addEditForm.get('Id').value">
-            <label for="re_password" class="label">Nhập lại mật khẩu: </label>
+            <label for="re_password" class="label" i18n>Nhập lại mật khẩu:</label>
             <input formControlName="re_password" type="password" class="input" placeholder="Nhập lại mật khẩu" />
             <span class="error"
-              *ngIf="addEditForm.get('re_password').touched && addEditForm.get('re_password').invalid">Xin hãy nhập lại
+              *ngIf="addEditForm.get('re_password').touched && addEditForm.get('re_password').invalid" i18n>Xin hãy nhập lại
               mật khẩu</span>
           </div>
           <div class="block">
-            <label class="label">
-              Quyền
-            </label>
+            <label class="label" i18n>Quyền</label>
             <ng-select formControlName="roles" [multiple]="true" [closeOnSelect]="false" placeholder="--- Chọn quyền ---">
                 <ng-option *ngFor="let role of roleList" [value]="role.id">{{role.name}}</ng-option>
             </ng-select>
           </div>
           <div class="block">
-            <label for="avatar" class="label">
-              Avatar
-            </label>
+            <label for="avatar" class="label" i18n>Ảnh đại diện</label>
             <input type="file" class="input" #avatar name="avatar">
             <input type="hidden" formControlName="avatar">
           </div>
           <div class="block">
-            <label for="status" class="label">
-              Trạng thái
-            </label>
+            <label for="status" class="label" i18n>Trạng thái</label>
             <input formControlName="status" type="checkbox">
           </div>
-          <button class="btn btn-success btn-save" type="submit">
-            <i class="fa-solid fa-plus"></i>Cập nhật
-          </button>
-          <button class="btn btn-danger btn-cancel" type="button" (click)="modalAddEdit.hide()">
-            <i class="fa-solid fa-xmark"></i>Quay lại
-          </button>
+          <button class="btn btn-success btn-save" type="submit" i18n>
+            <i class="fa-solid fa-plus"></i>Cập nhật</button>
+          <button class="btn btn-danger btn-cancel" type="button" (click)="modalAddEdit.hide()" i18n>
+            <i class="fa-solid fa-xmark"></i>Quay lại</button>
         </form>
       </div>
     </div>

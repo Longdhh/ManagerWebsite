@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { ModalDirective } from 'ngx-bootstrap/modal';
 import { MessageConstants } from 'src/app/common/message.constants';
@@ -27,7 +28,7 @@ export class CategoryComponent implements OnInit {
   totalRow: number;
   keyword: any='';
   constructor(private data: SidebarService, private service: SharedService, private utilityService: UtilityService
-    ,private notificationService: NotificationService,private route: ActivatedRoute) { }
+    ,private notificationService: NotificationService,private route: ActivatedRoute, private title: Title) { }
 
   ngOnInit(): void {
     this.initializeForm();
@@ -41,6 +42,7 @@ export class CategoryComponent implements OnInit {
         })
       }
     );
+    this.title.setTitle("Quản lý danh mục")
     this.loadData();
   }
 

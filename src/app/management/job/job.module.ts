@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ManageJobComponent } from './manage-job.component';
+import { JobComponent } from './job.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedService } from 'src/app/services/shared.service';
 import { ModalModule } from 'ngx-bootstrap/modal';
@@ -10,12 +10,12 @@ import { NgSelectModule } from '@ng-select/ng-select';
 
 
 export const routes: Routes = [
-  { path: '', component: ManageJobComponent }
+  { path: '', component: JobComponent }
 ];
 
 
 @NgModule({
-  declarations: [ManageJobComponent],
+  declarations: [JobComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

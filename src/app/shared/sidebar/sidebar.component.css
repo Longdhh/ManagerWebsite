@@ -91,10 +91,17 @@
     color: var(--bs-pink);
 }
 
+.file-icon {
+    color: var(--bs-blue)
+}
+
 .logout-icon {
     color: var(--bs-red);
 }
 
+.computer-icon {
+    color: var(--bs-green)
+}
 .item {
     width: 100%;
     display: block;

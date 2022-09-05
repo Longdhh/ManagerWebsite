@@ -1,3 +1,7 @@
 main {
     position: relative;
 }
+.ck-editor__editable {
+    background-color: white
+}
+

@@ -1,0 +1,102 @@
+
+<div class="container-xl">
+  <h1 class="title" i18n>Cập nhật danh sách tỉnh/thành phố</h1>
+  <form action="changeProvinceInfoForm" [formGroup]="provinceForm" class="form">
+    <div class="block">
+      <label for="name" class="label" i18n>Tên tỉnh/thành phố</label>
+      <input formControlName="name" type="text" class="input">
+      <span class="error" *ngIf="provinceForm.get('name').touched && 
+                provinceForm.get('name').hasError('required')" i18n>Xin hãy nhập tên tỉnh/thành phố</span>
+      <button class="btn btn-success btn-find" (click)="loadData()" i18n>Tìm kiếm</button>
+      <button (click)="showAdd()" class="btn btn-success btn-create" i18n>
+        <i class="fa-solid fa-plus"></i>Tạo mới</button>
+    </div>
+  </form>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col" i18n>Tên tỉnh/thành phố</th>
+        <th scope="col" i18n>Trạng thái</th>
+        <th scope="col" i18n>Chỉnh sửa gần nhất</th>
+        <th scope="col" i18n>Tác vụ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of provinceList">
+        <td>{{item.name}}</td>
+        <td *ngIf="item.status===true" i18n>Chạy</td>
+        <td *ngIf="item.status===false" i18n>Không chạy</td>
+        <td *ngIf="item.modified_at===null">{{item.created_at| date: 'dd/MM/yyyy'}}</td>
+        <td *ngIf="item.modified_at!==null">{{item.modified_at| date: 'dd/MM/yyyy'}}</td>
+        <td>
+          <button (click)="showEdit(item.province_id)" class="edit-link">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+          <a (click)="deleteItem(item.province_id)" class="delete-link">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination">
+    <div class="col-md-12">
+      <pagination [boundaryLinks]="true" [itemsPerPage]="pageSize" (pageChanged)="pageChanged($event)" [totalItems]="totalRow"
+      [(ngModel)]="pageIndex" class="pagination-sm" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+    </div>
+  </div>
+</div>
+<div bsModal #modalAddEdit="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title pull-left title" i18n>Thêm/sửa tỉnh/thành phố</h4>
+      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalAddEdit.hide()">
+        <span aria-hidden="true" class="visually-hidden">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="addEditForm" class="form" (ngSubmit)="saveChanges(addEditForm.valid)">
+        <div class="block">
+          <input type="hidden" formControlName="province_id" name="province_id">
+          <label for="name" class="label">
+            <p i18n>Tên tỉnh/thành phố</p>
+          </label>
+          <input formControlName="name" type="text" class="input" (change)="createSeoTitle()">
+          <span class="error" *ngIf="addEditForm.get('name').touched && 
+                    addEditForm.get('name').hasError('required')" i18n>Xin hãy nhập tên tỉnh/thành phố</span>
+        </div>
+        <div class="block">
+          <label for="seo_alias" class="label">
+            <p>SEO Alias</p>
+          </label>
+          <input formControlName="seo_alias" type="text" class="input">
+          <span class="error" *ngIf="addEditForm.get('seo_alias').touched && 
+                    addEditForm.get('seo_alias').hasError('required')" i18n>Xin hãy nhập SEO Alias</span>
+        </div>
+        <div class="block">
+          <label for="seo_title" class="label">
+            <p i18n>Tiêu đề SEO</p>
+          </label>
+          <input formControlName="seo_title" type="text" class="input">
+        </div>
+        <div class="block">
+          <label for="seo_description" class="label">
+            <p i18n>Mô tả SEO</p>
+          </label>
+          <input formControlName="seo_description" type="text" class="input">
+        </div>
+        <div class="block">
+          <label for="status" class="label">
+            <p i18n>Trạng thái</p>
+          </label>
+          <input formControlName="status" type="checkbox">
+        </div>
+        <button class="btn btn-success btn-save" type="submit" i18n>
+          <i class="fa-solid fa-plus"></i>Cập nhật</button>
+        <button class="btn btn-danger btn-cancel" type="button" (click)="modalAddEdit.hide()" i18n>
+          <i class="fa-solid fa-xmark"></i>Quay lại</button>
+      </form>
+    </div>
+</div>

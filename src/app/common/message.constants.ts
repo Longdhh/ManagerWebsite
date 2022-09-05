@@ -7,4 +7,9 @@ export class MessageConstants {
     public static UPDATED_OK_MSG = "Cập nhật thành công!";
     public static DELETE_OK_MSG = "Xoá thành công";
     public static  FORBIDDEN = "Bạn bị chặn truy cập";
+    public static PUBLISH_SUCCESS_MSG = "Đăng tải blog thành công";
+    public static CONFIRM_PUBLISH_MSG = "Bạn có chắc chắn muốn đăng tải bài viết này ?";
+    public static CONFIRM_UNPUBLISH_MSG = "Bạn có muốn huỷ đăng tải bài viết này ?";
+    public static DELETE_BLOG_MSG = "Bạn có muốn xoá bài viết này ?";
+    public static DELETE_BLOG_OK_MSG = "Xoá blog thành công";
 }

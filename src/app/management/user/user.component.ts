@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { ModalDirective } from 'ngx-bootstrap/modal';
 import { MessageConstants } from 'src/app/common/message.constants';
 import { SystemConstants } from 'src/app/common/system.constants';
@@ -29,7 +30,7 @@ export class UserComponent implements OnInit {
   pageDisplay: number = 10;
   totalRow: number;
   constructor(private data: SidebarService, private service: SharedService, private notificationService: NotificationService,
-    private uploadService: UploadService) { }
+    private uploadService: UploadService, private titleService: Title) { }
 
   ngOnInit(): void {
     this.initializeForm();

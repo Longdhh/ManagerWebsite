@@ -12,6 +12,7 @@ export class SidebarComponent implements OnInit {
   isSideBarOpen: boolean;
   isInfoOpen = false;
   isUserOpen = false;
+  isTextOpen = false;
   pageElement: HTMLElement;
   constructor(private data: SidebarService, private utilityService: UtilityService) { }
 
@@ -38,6 +39,9 @@ export class SidebarComponent implements OnInit {
     }
     if(this.isSideBarOpen === false && this.isUserOpen === true) {
       this.isUserOpen = false;
+    }
+    if(this.isSideBarOpen === false && this.isTextOpen === true) {
+      this.isTextOpen = false;
     }
     this.toggleSideBarActive();
   }
@@ -67,7 +71,13 @@ export class SidebarComponent implements OnInit {
     }
     this.toggleSideBarActive();
   }
-
+  toggleTextSubMenu() {
+    this.isTextOpen = !this.isTextOpen;
+    if(this.isTextOpen === true && this.isSideBarOpen === false) {
+      this.data.changeState(true);
+    }
+    this.toggleSideBarActive();
+  }
   reset() {
     this.data.changeState(false);
   }

@@ -4,25 +4,25 @@
             <div class="col-xxl-3 col-12 col-md-5 col-lg-4 col col-sm-7">
                 <div class="login__column">
                     <div class="login-form" role="login-form">
-                        <h1 class="login__title">Đăng nhập</h1>
-                        <p class="login__description">Hệ thống quản lý thông tin trực tuyến</p>
+                        <h1 class="login__title" i18n>Đăng nhập</h1>
+                        <p class="login__description" i18n>Hệ thống quản lý thông tin trực tuyến</p>
                         <form class="loginForm" [formGroup]="loginForm" (ngSubmit)="login()">
                             <div class="block">
-                                <label for="user" class="title">Tên tài khoản: </label>
+                                <label for="user" class="title" i18n>Tên tài khoản:</label>
                                 <i class="fa-solid fa-user icon"></i>
                                 <input formControlName="username" type="text" class="input" placeholder="Nhập tên tài khoản"/>
                                 <span class="error" *ngIf="loginForm.get('username')?.touched && 
-                                    loginForm.get('username')?.hasError('required')">Xin hãy nhập tên tài khoản</span>
+                                    loginForm.get('username')?.hasError('required')" i18n>Xin hãy nhập tên tài khoản</span>
                             </div>
                             <div class="block">
-                                <label for="password" class="title">Mật khẩu: </label>
+                                <label for="password" class="title" i18n>Mật khẩu:</label>
                                 <i class="fa-solid fa-key icon"></i>
                                 <input formControlName="password" type="password" class="input" placeholder="Nhập mật khẩu"/>
                                 <span class="error" *ngIf="loginForm.get('password')?.touched && 
-                                    loginForm.get('password')?.hasError('required')">Xin hãy nhập mật khẩu</span>
+                                    loginForm.get('password')?.hasError('required')" i18n>Xin hãy nhập mật khẩu</span>
                             </div>
-                            <button type="submit" name="submit" class="btn login__btn btn-success">Đăng nhập</button>
-                            <a routerLink="/forgot-password" class="link">Quên mật khẩu ?</a>
+                            <button type="submit" name="submit" class="btn login__btn btn-success" i18n>Đăng nhập</button>
+                            <a routerLink="/forgot-password" class="link" i18n>Quên mật khẩu ?</a>
                         </form>
                     </div>
                 </div>

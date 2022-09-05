@@ -8,10 +8,12 @@ import {HttpClientModule} from '@angular/common/http';
 import { appRoutes } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { AuthGuard } from './guard/auth.guard';
+import { GoTopBnComponent } from './shared/go-top-bn/go-top-bn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    GoTopBnComponent,
   ],
   imports: [
     BrowserModule,

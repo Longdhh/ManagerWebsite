@@ -5,7 +5,7 @@
                 <div class="logo-holder">
                     <img src="../../../assets/img/logo/logo.jpg" alt="" class="logo">
                 </div>
-                <h5>Quản lý thông tin</h5>
+                <h5 i18n>Quản lý thông tin</h5>
             </div>
             <button class="toggle-button" (click)="toggleSidebar(); adjustPage()">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -24,7 +24,7 @@
                 <div class="icon-holder">
                     <i class="fa-solid fa-user icon"></i>
                 </div>
-                <h5 class="title">Quản lý người dùng</h5>
+                <h5 class="title" i18n>Quản lý người dùng</h5>
                 <div class="icon-holder toggle-icon">
                     <i class="fa-solid fa-caret-down icon"></i>
                 </div>
@@ -33,14 +33,10 @@
         <div [collapse]="!isUserOpen" [isAnimated]="true" id="collapseBasic">
             <ul id="sub-item__list">
                 <a routerLink="/main/roles" class="link">
-                    <li class="sub-item">
-                        Nhóm quyền
-                    </li>
+                    <li class="sub-item" i18n>Nhóm quyền</li>
                 </a>
                 <a routerLink="/main/users" class="link">
-                    <li class="sub-item">
-                        Người dùng
-                    </li>
+                    <li class="sub-item" i18n>Người dùng</li>
                 </a>
             </ul>
         </div>
@@ -49,7 +45,7 @@
                 <div class="icon-holder">
                     <i class="fa-solid fa-briefcase job-icon icon"></i>
                 </div>
-                <h5 class="title">Quản lý các công việc</h5>
+                <h5 class="title" i18n>Quản lý các công việc</h5>
             </div>
         </a>
         <!-- <a class="item" routerLink="/main/company">
@@ -63,9 +59,9 @@
         <a class="item" (click)="toggleInfoSubMenu()" [attr.aria-expanded]="!isInfoOpen" aria-controls="collapseBasic">
             <div class="link">
                 <div class="icon-holder">
-                    <i class="fa-solid fa-file-lines icon"></i>
+                    <i class="fa-solid fa-computer icon computer-icon"></i>
                 </div>
-                <h5 class="title">Quản lý thông tin website</h5>
+                <h5 class="title" i18n>Quản lý thông tin website</h5>
                 <div class="icon-holder toggle-icon">
                     <i class="fa-solid fa-caret-down icon"></i>
                 </div>
@@ -74,49 +70,52 @@
         <div [collapse]="!isInfoOpen" [isAnimated]="true" id="collapseBasic">
             <ul id="sub-item__list">
                 <a routerLink="/main/province" class="link">
-                    <li class="sub-item">
-                        Tỉnh/thành phố
-                    </li>
+                    <li class="sub-item" i18n>Tỉnh/thành phố</li>
                 </a>
                 <a routerLink="/main/category" class="link">
-                    <li class="sub-item">
-                        Danh mục công việc
-                    </li>
+                    <li class="sub-item" i18n>Danh mục công việc</li>
                 </a>
                 <a routerLink="/main/level" class="link">
-                    <li class="sub-item">
-                        Trình độ công việc
-                    </li>
+                    <li class="sub-item" i18n>Trình độ công việc</li>
                 </a>
                 <a routerLink="/main/home-slide" class="link">
-                    <li class="sub-item">
-                        Home Slide
-                    </li>
+                    <li class="sub-item" i18n>Home Slide</li>
                 </a>
                 <a routerLink="/main/salary" class="link">
-                    <li class="sub-item">
-                        Mức lương
-                    </li>
-                </a>
-                <a routerLink="/main/tos" class="link">
-                    <li class="sub-item">
-                        Điều khoản dịch vụ
-                    </li>
-                </a>
-                <a routerLink="/main/security" class="link">
-                    <li class="sub-item">
-                        Chính sách bảo mật
-                    </li>
+                    <li class="sub-item" i18n>Mức lương</li>
                 </a>
                 <a routerLink="/main/working-type" class="link">
-                    <li class="sub-item">
-                        Cách thức làm việc
-                    </li>
+                    <li class="sub-item" i18n>Cách thức làm việc</li>
                 </a>
                 <a routerLink="/main/welfare-type" class="link">
-                    <li class="sub-item">
-                        Loại phúc lợi
-                    </li>
+                    <li class="sub-item" i18n>Loại phúc lợi</li>
+                </a>
+                <a routerLink="/main/blog-category" class="link">
+                    <li class="sub-item" i18n>Phân loại blog</li>
+                </a>
+            </ul>
+        </div>
+        <a class="item" (click)="toggleTextSubMenu()" [attr.aria-expanded]="!isTextOpen" aria-controls="collapseBasic">
+            <div class="link">
+                <div class="icon-holder">
+                    <i class="fa-solid fa-file-lines icon file-icon"></i>
+                </div>
+                <h5 class="title" i18n>Quản lý văn bản</h5>
+                <div class="icon-holder toggle-icon">
+                    <i class="fa-solid fa-caret-down icon"></i>
+                </div>
+            </div>
+        </a>
+        <div [collapse]="!isTextOpen" [isAnimated]="true" id="collapseBasic">
+            <ul id="sub-item__list">
+                <a routerLink="/main/blog" class="link">
+                    <li class="sub-item">Blog</li>
+                </a>
+                <a routerLink="/main/tos" class="link">
+                    <li class="sub-item" i18n>Điều khoản dịch vụ</li>
+                </a>
+                <a routerLink="/main/security" class="link">
+                    <li class="sub-item" i18n>Chính sách bảo mật</li>
                 </a>
             </ul>
         </div>
@@ -125,7 +124,7 @@
                 <div class="icon-holder">
                     <i class="fa-solid fa-right-from-bracket logout-icon icon"></i>
                 </div>
-                <h5 class="title">Đăng xuất</h5>
+                <h5 class="title" i18n>Đăng xuất</h5>
             </div>
         </a>
     </div>

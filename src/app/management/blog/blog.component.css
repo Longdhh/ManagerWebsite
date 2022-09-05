@@ -1,0 +1,123 @@
+
+.must {
+    display: inline-block;
+    color: var(--bs-red);
+}
+
+.title {
+    color: var(--bs-success);
+}
+
+.block {
+    margin-left: 0;
+    display: -webkit-inline-box;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.label {
+    text-align: right;
+    padding-right:10px;
+    width: 100px;
+}
+
+.input {
+    width: 400px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+.error {
+    color: var(--bs-red);
+    margin-left: 20px;
+}
+
+.form {
+    margin-top: 20px;
+    padding: 0 40px;
+}
+
+.view-link,
+.unpublish-link,
+.publish-link,
+.delete-link,
+.edit-link {
+    text-decoration: none;
+    margin-right: 12px;
+    background-color: transparent;
+    border: none;
+}
+
+.view-link {
+    color: var(--bs-success)
+}
+
+.publish-link {
+    color: var(--bs-green)
+}
+.edit-link {
+    color: var(--bs-primary);
+}
+
+.delete-link
+{
+    color: var(--bs-danger);
+    cursor: pointer;
+}
+
+.btn-create,
+.btn-find {
+    margin-left: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.btn-cancel {
+    margin-right: 20px;
+}
+
+.btn-pre {
+    margin-right: 20px;;
+}
+
+.btn-unpublish {
+    background-color: var(--bs-dark);
+    color: white;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.btn-save {
+    margin-right: 20px;
+    background-color: var(--bs-yellow);
+    color: var(--bs-white)
+}
+
+.btn-air {
+    margin-left: 120px;
+    margin-right: 20px;
+}
+.btn > i {
+    margin-right: 8px;
+}
+.pagination {
+    position: absolute;
+
+    right:70px;
+}
+td {
+    border: 1px solid var(--bs-gray-200)
+}
+
+:host ::ng-deep .ck-editor__editable_inline {
+    background-color: white;
+    border: 1px solid black;
+    height: 600px;
+}
+
+.editor {
+    margin-bottom: 20px;
+}
+

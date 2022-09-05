@@ -1,0 +1,23 @@
+.btn-save {
+    margin-top: 20px
+}
+
+.title {
+    color: var(--bs-success);
+}
+
+.block {
+    display: block
+}
+
+.form {
+    margin-top: 20px;;
+}
+
+.icon {
+    margin-right: 4px;
+}
+:host ::ng-deep .ck-editor__editable_inline {
+    background-color: white;
+    border: 1px solid black
+}

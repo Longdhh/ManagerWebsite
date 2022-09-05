@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ManageSecurityComponent } from './manage-security.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ModalModule } from 'ngx-bootstrap/modal';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { AuthService } from 'src/app/services/auth.service';
+import { SharedService } from 'src/app/services/shared.service';
+import { SecurityComponent } from './security.component';
+
 
 export const routes: Routes = [
-  { path: '', component: ManageSecurityComponent }
+  { path: '', component: SecurityComponent }
 ];
 
 @NgModule({
-  declarations: [ManageSecurityComponent],
+  declarations: [SecurityComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),
-    ModalModule,
-    PaginationModule,
     FormsModule,
     CKEditorModule,
   ],
-  providers: []
+  providers: [AuthService, SharedService]
 })
 export class SecurityModule { }

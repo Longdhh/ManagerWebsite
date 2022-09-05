@@ -1,0 +1,11 @@
+
+<div class="container-xl">
+  <h1 class="title" i18n>Cập nhật chính sách bảo mật</h1>
+  <form [formGroup]="editForm" class="form" (ngSubmit)="saveChanges(editForm.valid)">
+    <div class="block">
+      <ckeditor [editor]="Editor" formControlName="description" (ready)="onReady($event)"></ckeditor>
+    </div>
+    <button class="btn btn-success btn-save" type="submit" i18n>
+      <i class="fa-solid fa-plus icon"></i>Cập nhật</button>
+  </form>
+</div>

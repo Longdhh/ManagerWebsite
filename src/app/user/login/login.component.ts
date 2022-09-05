@@ -17,12 +17,10 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   model: any = {};
   returnUrl: string;
-  title: "Đăng nhập";
   constructor(private titleService: Title, private router: Router, private authService: AuthService, private notificationService: NotificationService) { }
-
   ngOnInit() {
     this.initializeForm();
-    this.titleService.setTitle(this.title);
+    this.titleService.setTitle("Đăng nhập");
   }
 
   initializeForm() {
